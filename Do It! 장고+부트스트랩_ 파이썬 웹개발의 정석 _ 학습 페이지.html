@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)https://www.inflearn.com/course/%EB%91%90%EC%9E%87-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9B%B9%EA%B0%9C%EB%B0%9C/unit/81728 -->
+<html lang="ko" style="--vh:7.96px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-emotion="mantine" data-s=""></style>
+    
+    <link rel="icon" type="image/svg+xml" href="https://cdn.inflearn.com/monolith/lecture/assets/favicon.8aa87a73.ico">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+
+    <title>Do It! 장고+부트스트랩: 파이썬 웹개발의 정석 | 학습 페이지</title>
+    <script type="text/javascript" async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/analytics.js"></script><script src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/AceCounter_AW.js"></script><script async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/uwt.js"></script><script async="" charset="utf-8" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/plugin.min.js"></script><script async="" defer="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/enp_tracker_self_hosted.min.js"></script><script src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/441896424280799" async=""></script><script async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/fbevents.js"></script><script type="text/javascript" async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/f.txt"></script><script type="text/javascript" async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/hotjar-1070825.js"></script><script type="text/javascript" async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/hotjar-1039300.js"></script><script gtm="GTM-MVM7ZHX" type="text/javascript" async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/optimize.js"></script><script async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/gtm.js"></script><script type="module" crossorigin="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/index.b141fd72.js"></script>
+    <link rel="stylesheet" href="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/index.543de552.css">
+  <style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css" data-s=""></style><meta http-equiv="origin-trial" content="A7bG5hJ4XpMV5a3V1wwAR0PalkFSxLOZeL9D/YBYdupYUIgUgGhfVJ1zBFOqGybb7gRhswfJ+AmO7S2rNK2IOwkAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/demian.js" async=""></script><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);</style><style type="text/css">.huntr-ext-add-job-container .add-job-container {
+  padding: 25px 25px 100px 25px;
+  max-height: 550px;
+}
+.huntr-ext-add-job-container .save-job-footer {
+  width: 300px;
+  position: absolute;
+  bottom: 22px;
+  background-color: #f3f1f5;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.huntr-ext-add-job-container .btn {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  width: 150px !important;
+}
+.huntr-ext-add-job-container .btn.waiting {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.huntr-ext-add-job-container .list-item {
+  text-transform: capitalize;
+}
+.huntr-ext-parsed-jobs-container .no-results {
+  font-size: 14px !important;
+  color: rgba(25,4,69,0.7) !important;
+  padding: 40px;
+  text-align: center;
+}
+.huntr-ext-parsed-jobs-container .job-result {
+  padding: 20px 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.huntr-ext-parsed-jobs-container .job-result:hover {
+  background-color: rgba(25,4,69,0.1);
+}
+.huntr-ext-parsed-jobs-container .job-title {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #190445 !important;
+  margin-bottom: 3px !important;
+}
+.huntr-ext-parsed-jobs-container .job-company,
+.huntr-ext-parsed-jobs-container .job-location {
+  max-width: 100px !important;
+}
+.huntr-ext-parsed-jobs-container .job-company {
+  margin-right: 10px !important;
+  font-weight: bold;
+  color: rgba(25,4,69,0.9);
+}
+.huntr-ext-parsed-jobs-container .job-location {
+  color: rgba(25,4,69,0.7);
+}
+.huntr-ext-parsed-jobs-container .job-description {
+  color: rgba(25,4,69,0.4);
+}
+.huntr-ext-parsed-jobs-container .job-company,
+.huntr-ext-parsed-jobs-container .job-description,
+.huntr-ext-parsed-jobs-container .job-location {
+  font-size: 13px;
+}
+.huntr-ext-parsed-jobs-container p {
+  line-height: 15px !important;
+  margin: 0 !important;
+}
+.huntr-ext-parsed-jobs-container span {
+  margin: 0 !important;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.huntr-capitalize {
+  text-transform: capitalize;
+}
+.huntr-error-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: #ff3569;
+  padding: 15px;
+  font-size: 12px;
+  color: #fff;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Lato, sans-serif;
+}
+.huntr-ext-add-job-success-container {
+  padding: 30px;
+  text-align: center;
+}
+.huntr-ext-add-job-success-container .message {
+  height: 180px !important;
+  margin-top: 20px !important;
+  border-bottom: 1px solid #eaeaea !important;
+}
+.huntr-ext-add-job-success-container .message p {
+  font-size: 22px !important;
+  line-height: 50px !important;
+  text-align: center !important;
+}
+.huntr-ext-add-job-success-container .message .huntr-icon {
+  font-size: 45px !important;
+  color: rgba(74,74,74,0.2) !important;
+}
+.huntr-ext-add-job-success-container .huntr-footer {
+  margin-top: 30px;
+}
+.huntr-ext-add-job-success-container .huntr-footer a.btn {
+  color: #fff !important;
+  width: 200px;
+}
+.huntr-ext-add-job-success-container .huntr-footer .btn img {
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+.huntr-ext-settings-container {
+  margin-top: 25px;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 16px;
+  text-align: center;
+  color: #4a4a4a;
+  height: 140px;
+  margin-top: 50px;
+}
+.huntr-ext-settings-container p {
+  line-height: 18px;
+}
+.huntr-ext-time-to-upgrade {
+  padding: 35px;
+  text-align: center;
+  color: #6a4feb;
+}
+.huntr-ext-time-to-upgrade .huntr-icon {
+  margin: 10px 0 40px 0;
+  font-size: 60px;
+  color: rgba(106,79,235,0.1);
+}
+#huntr-react-container-2 {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  display: block !important;
+  font-family: 'Lato', sans-serif;
+}
+#huntr-react-container-2 a,
+#huntr-react-container-2 p,
+#huntr-react-container-2 span,
+#huntr-react-container-2 div {
+  font-family: 'Lato', sans-serif !important;
+}
+#huntr-react-container-2 form {
+  margin: 0;
+  padding: 0;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-button {
+  width: 0px !important;
+  height: 0px !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-track {
+  box-shadow: none !important;
+  background-color: "white" !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-thumb {
+  background-color: rgba(24,0,69,0.1) !important;
+  border: 4px solid #fff !important;
+  border-radius: 100px !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(24,0,69,0.2) !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-thumb:active {
+  background-color: rgba(24,0,69,0.2) !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar {
+  width: 13px !important;
+  height: 20px !important;
+}
+#huntr-react-container-2 .huntr-title {
+  font-size: 22px;
+  font-weight: regular;
+  color: #190445 !important;
+}
+#huntr-react-container-2 .huntr-description {
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(25,4,69,0.7) !important;
+}
+#huntr-react-container-2 a {
+  cursor: pointer;
+}
+#huntr-react-container-2 .centered {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+#huntr-react-container-2 .field {
+  position: relative;
+}
+#huntr-react-container-2 .field-container .huntr-icon {
+  position: absolute;
+  right: 5px;
+  bottom: 14px;
+  font-size: 16px;
+  color: #d4d4d4;
+  cursor: pointer;
+}
+#huntr-react-container-2 .field-container .input-image {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  bottom: 14px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+}
+#huntr-react-container-2 .hide {
+  visibility: hidden;
+}
+#huntr-react-container-2 .btn {
+  font-family: 'Lato', sans-serif !important;
+  border-radius: 4px !important;
+  font-size: 14px;
+  display: block !important;
+  cursor: pointer !important;
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.2px !important;
+  position: relative;
+  transition: all 0.4s ease-out !important;
+  text-align: center !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  text-shadow: none !important;
+  line-height: 37px;
+  box-sizing: border-box !important;
+}
+#huntr-react-container-2 .btn .huntr-icon {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  color: rgba(255,255,255,0.4);
+  font-size: 16px;
+}
+#huntr-react-container-2 .btn-purple {
+  color: #fff;
+  text-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+  background-color: #6a4feb;
+}
+#huntr-react-container-2 .btn-purple:hover {
+  background-color: #8c35ff;
+}
+#huntr-react-container-2 .btn-purple:disabled {
+  cursor: not-allowed;
+  color: rgba(25,4,69,0.4) !important;
+  background-color: rgba(25,4,69,0.2) !important;
+}
+#huntr-react-container-2 ul {
+  margin: 0px;
+  padding: 0px;
+}
+#huntr-react-container-2 ul li {
+  list-style: none;
+}
+#huntr-react-container-2 .location-search .huntr-drop-down-menu span {
+  font-size: 11px;
+  display: inline-block;
+}
+#huntr-react-container-2 .truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#huntr-react-container-2 .huntr-drop-down-menu {
+  color: #4a4a4a;
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 13px;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+  z-index: 1;
+  border: 1px solid #ddd;
+  max-height: 250px;
+  overflow-y: auto;
+}
+#huntr-react-container-2 .huntr-drop-down-menu .huntr-ddmenu-footer {
+  padding: 10px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  cursor: pointer;
+}
+#huntr-react-container-2 .huntr-drop-down-menu .huntr-ddmenu-footer .huntr-icon {
+  margin-right: 10px;
+}
+#huntr-react-container-2 .huntr-logo img {
+  width: 16px;
+  position: relative;
+  top: -5px;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#huntr-react-container-2 .huntr-ext-nav-menu .nav-tooltip {
+  display: none;
+  position: absolute;
+  background-color: #7f7b92;
+  color: #fff;
+  left: -45px;
+  font-size: 11px;
+  width: 90px;
+  line-height: 30px;
+  padding: 0px 15px;
+  border-radius: 20px;
+  top: -25px;
+  text-align: center;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu .nav-tooltip:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #7f7b92;
+  top: 30px;
+  left: 45px;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li {
+  position: relative;
+  padding: 0px;
+  cursor: pointer;
+  margin: 0px 31px 0px 0px;
+  font-size: 17px;
+  display: inline-block;
+  color: #b5b5b5;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li a,
+#huntr-react-container-2 .huntr-ext-nav-menu ul li span {
+  line-height: 50px;
+  vertical-align: middle;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li:first-child {
+  margin-left: 20px;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li:last-child {
+  margin: 0px;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li:hover {
+  color: rgba(0,0,0,0.8);
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li:hover .nav-tooltip {
+  display: inline-block;
+}
+#huntr-react-container-2 .huntr-ext-top-menu {
+  background-color: #f3f1f5;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  position: relative;
+  width: 100%;
+  color: rgba(0,0,0,0.25);
+}
+#huntr-react-container-2 .huntr-ext-top-menu img {
+  max-width: 60px;
+  box-sizing: content-box;
+  padding: 12px 0px 10px 12px;
+}
+#huntr-react-container-2 p,
+#huntr-react-container-2 span {
+  text-shadow: none;
+}
+#huntr-react-container-2 p.huntr-icon,
+#huntr-react-container-2 span.huntr-icon {
+  font-family: 'simple-line-icons' !important;
+}
+#huntr-react-container-2 p.huntr-icon:before,
+#huntr-react-container-2 span.huntr-icon:before {
+  font-family: 'simple-line-icons' !important;
+}
+#huntr-react-container-2 h1 {
+  font-family: 'Lato', sans-serif !important;
+  text-transform: uppercase !important;
+  color: #4a4a4a !important;
+  letter-spacing: 5px !important;
+  font-size: 16px !important;
+  font-weight: 900;
+}
+#huntr-react-container-2 .huntr-ext-app-container {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 100000;
+  max-height: 600px;
+  min-height: 300px;
+}
+#huntr-react-container-2 .huntr-ext-app-container .inner-container {
+  height: 100%;
+  background-color: #fff;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  outline: 1px solid rgba(0,0,0,0.1);
+}
+#huntr-react-container-2 .huntr-ext-minimize {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 35px;
+  font-family: 'Lato', sans-serif;
+  line-height: normal;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: rgba(74,74,74,0.2);
+  font-weight: 400;
+  z-index: 1;
+}
+#huntr-react-container-2 .huntr-ext-minimize:hover {
+  color: rgba(74,74,74,0.7);
+}
+#huntr-react-container-2 .editable-text-field {
+  width: 100%;
+}
+#huntr-react-container-2 .huntr-ext-app-mini {
+  background-color: #6a4feb;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 10000;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+#huntr-react-container-2 .huntr-ext-app-mini:after {
+  content: 'h';
+}
+#huntr-react-container-2 .huntr-ext-component-container h1 {
+  text-align: center;
+  margin: 60px 0px;
+}
+#huntr-react-container-2 .huntr-ext-component-container .drop-down-button {
+  font-family: 'Lato', sans-serif !important;
+  -webkit-appearance: none !important;
+  outline: 0 !important;
+  border-radius: 2px !important;
+  box-sizing: border-box !important;
+  font-family: 'Lato', sans-serif !important;
+  width: 100% !important;
+  padding: 12px 12px !important;
+  font-size: 14px !important;
+  color: rgba(74,74,74,0.9) !important;
+  margin-bottom: 14px !important;
+  font-weight: 400 !important;
+  background-color: #fafafa !important;
+  border: 1px solid #dcdcdc !important;
+  transition: none !important;
+  text-align: left !important;
+  cursor: pointer !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input {
+  font-size: 16px;
+  height: 35px;
+}
+#huntr-react-container-2 .huntr-ext-component-container input::-webkit-input-placeholder {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-family: 'Lato', sans-serif !important;
+  color: rgba(24,0,69,0.3) !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container textarea {
+  font-size: 14px;
+  height: 130px;
+}
+#huntr-react-container-2 .huntr-ext-component-container textarea::-webkit-input-placeholder {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: 'Lato', sans-serif !important;
+  color: rgba(24,0,69,0.3) !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input,
+#huntr-react-container-2 .huntr-ext-component-container textarea {
+  box-shadow: none;
+  background-color: #fff;
+  background-image: none !important;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif !important;
+  letter-spacing: 0px;
+  width: 100%;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #eee !important;
+  font-weight: 400 !important;
+  margin: 0px !important;
+  color: rgba(25,4,69,0.7) !important;
+  border-radius: 0 !important;
+  line-height: normal !important;
+  padding: 20px 0 !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input.clean,
+#huntr-react-container-2 .huntr-ext-component-container textarea.clean {
+  border: none !important;
+  height: 100%;
+  padding: 0 !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input.clean:focus,
+#huntr-react-container-2 .huntr-ext-component-container textarea.clean:focus,
+#huntr-react-container-2 .huntr-ext-component-container input.clean::selection,
+#huntr-react-container-2 .huntr-ext-component-container textarea.clean::selection {
+  border-bottom: none !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input:focus,
+#huntr-react-container-2 .huntr-ext-component-container textarea:focus,
+#huntr-react-container-2 .huntr-ext-component-container input::selection,
+#huntr-react-container-2 .huntr-ext-component-container textarea::selection {
+  outline: 0;
+  border-bottom: 1px solid #8c35ff !important;
+  background-color: #fff !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input::selection,
+#huntr-react-container-2 .huntr-ext-component-container textarea::selection {
+  background-color: #8c35ff !important;
+  color: #fff;
+}
+.huntr-loader ::after,
+.huntr-loader ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.huntr-loader {
+  display: block;
+  height: 50px;
+  width: 50px;
+  animation: huntr-loader-1 3s linear infinite;
+  -webkit-animation: huntr-loader-1 3s linear infinite;
+}
+@-webkit-keyframes huntr-loader-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.huntr-loader span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  clip: rect(0px, 50px, 50px, 0);
+  -webkit-animation: huntr-loader-2 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: huntr-loader-2 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@-webkit-keyframes huntr-loader-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.huntr-loader span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  border: 4px solid transparent;
+  border-top: 4px solid #6a4feb;
+  border-radius: 50%;
+  -webkit-animation: huntr-loader-3 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: huntr-loader-3 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@-webkit-keyframes huntr-loader-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.huntr-loader span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  border: 4px solid rgba(106,79,235,0.2);
+  border-radius: 50%;
+}
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  display: block !important;
+}
+.huntr-date-picker-popper {
+  font-size: 0.8rem;
+}
+.huntr-date-picker-popper .react-datepicker {
+  font-family: "Lato", Helvetica, Arial, sans-serif !important;
+  background-color: #fff !important;
+  color: #180045 !important;
+  border: 1px solid rgba(24,0,69,0.1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 3px 7px -1px rgba(24,0,69,0.1) !important;
+}
+.huntr-date-picker-popper .react-datepicker__header {
+  background-color: #fafafb !important;
+  border-bottom: 1px solid rgba(24,0,69,0.1) !important;
+}
+.huntr-date-picker-popper .react-datepicker__day {
+  color: rgba(24,0,69,0.6) !important;
+}
+.huntr-date-picker-popper .react-datepicker__day-name {
+  color: rgba(24,0,69,0.7) !important;
+}
+.huntr-date-picker-popper .react-datepicker__day--disabled {
+  color: rgba(24,0,69,0.21) !important;
+}
+.huntr-date-picker-popper .react-datepicker__day--keyboard-selected,
+.huntr-date-picker-popper .react-datepicker__day--selected {
+  background-color: #8c35ff !important;
+  color: #fff !important;
+}
+.huntr-date-picker-popper .react-datepicker__today-button {
+  background-color: rgba(24,0,69,0.02) !important;
+  border-top: 1px solid rgba(24,0,69,0.1) !important;
+}
+.huntr-date-picker-popper .react-datepicker__time-container--with-today-button {
+  right: -96px !important;
+  border: 1px solid rgba(24,0,69,0.1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 3px 7px -1px rgba(24,0,69,0.1) !important;
+}
+.huntr-date-picker-popper .react-datepicker__time-list-item {
+  color: rgba(24,0,69,0.7) !important;
+  height: 18px !important;
+}
+.huntr-date-picker-popper .react-datepicker__time-list-item::hover {
+  background-color: #fafafb !important;
+}
+.huntr-date-picker-popper .react-datepicker__time-list-item--selected {
+  background-color: #8c35ff !important;
+  color: #fff;
+}
+.huntr-date-picker {
+  display: block;
+}
+.react-datepicker__close-icon {
+  width: auto !important;
+}
+.react-datepicker__close-icon::after {
+  background-color: #180045 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+@-moz-keyframes huntr-loader-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes huntr-loader-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes huntr-loader-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes huntr-loader-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes huntr-loader-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes huntr-loader-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes huntr-loader-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes huntr-loader-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes huntr-loader-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes huntr-loader-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes huntr-loader-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes huntr-loader-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style><style type="text/css">/*!
+ * Quill Editor v1.3.0
+ * https://quilljs.com/
+ * Copyright (c) 2014, Jason Chen
+ * Copyright (c) 2013, salesforce.com
+ */
+#huntr-react-container-2 .ql-container span,
+#huntr-react-container-2 .ql-container li,
+#huntr-react-container-2 .ql-container ul,
+#huntr-react-container-2 .ql-container div,
+#huntr-react-container-2 .ql-container strong,
+#huntr-react-container-2 .ql-container b,
+#huntr-react-container-2 .ql-container h1,
+#huntr-react-container-2 .ql-container h2,
+#huntr-react-container-2 .ql-container h3,
+#huntr-react-container-2 .ql-container p  {
+  font-size: 14px;
+  font-family: Lato, Arial, sans-serif !important;
+  color: #180045 !important;
+}
+
+#huntr-react-container-2 .ql-container {
+  box-sizing: border-box;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 13px;
+  height: 100%;
+  margin: 0px;
+  position: relative;
+}
+#huntr-react-container-2 .ql-container.ql-disabled .ql-tooltip {
+  visibility: hidden;
+}
+#huntr-react-container-2 .ql-container.ql-disabled .ql-editor ul[data-checked] > li::before {
+  pointer-events: none;
+}
+#huntr-react-container-2 .ql-clipboard {
+  left: -100000px;
+  height: 1px;
+  overflow-y: hidden;
+  position: absolute;
+  top: 50%;
+}
+#huntr-react-container-2 .ql-clipboard p {
+  margin: 0;
+  padding: 0;
+}
+#huntr-react-container-2 .ql-editor {
+  box-sizing: border-box;
+  line-height: 1.42;
+  height: 100% !important;
+  outline: none;
+  overflow-y: auto;
+  padding: 12px 18px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+#huntr-react-container-2 .ql-editor > * {
+  cursor: text;
+}
+#huntr-react-container-2 .ql-editor p,
+#huntr-react-container-2 .ql-editor ol,
+#huntr-react-container-2 .ql-editor ul,
+#huntr-react-container-2 .ql-editor pre,
+#huntr-react-container-2 .ql-editor blockquote,
+#huntr-react-container-2 .ql-editor h1,
+#huntr-react-container-2 .ql-editor h2,
+#huntr-react-container-2 .ql-editor h3,
+#huntr-react-container-2 .ql-editor h4,
+#huntr-react-container-2 .ql-editor h5,
+#huntr-react-container-2 .ql-editor h6 {
+  margin: 0;
+  padding: 0;
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol,
+#huntr-react-container-2 .ql-editor ul {
+  padding-left: 1.5em;
+}
+#huntr-react-container-2 .ql-editor ol > li,
+#huntr-react-container-2 .ql-editor ul > li {
+  list-style-type: none;
+}
+#huntr-react-container-2 .ql-editor ul > li::before {
+  content: '\2022';
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=true],
+#huntr-react-container-2 .ql-editor ul[data-checked=false] {
+  pointer-events: none;
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=true] > li *,
+#huntr-react-container-2 .ql-editor ul[data-checked=false] > li * {
+  pointer-events: all;
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=true] > li::before,
+#huntr-react-container-2 .ql-editor ul[data-checked=false] > li::before {
+  color: #777;
+  cursor: pointer;
+  pointer-events: all;
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=true] > li::before {
+  content: '\2611';
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=false] > li::before {
+  content: '\2610';
+}
+#huntr-react-container-2 .ql-editor li::before {
+  display: inline-block;
+  white-space: nowrap;
+  width: 1.2em;
+}
+#huntr-react-container-2 .ql-editor li:not(.ql-direction-rtl)::before {
+  margin-left: -1.5em;
+  margin-right: 0.3em;
+  text-align: right;
+}
+#huntr-react-container-2 .ql-editor li.ql-direction-rtl::before {
+  margin-left: 0.3em;
+  margin-right: -1.5em;
+}
+#huntr-react-container-2 .ql-editor ol li:not(.ql-direction-rtl),
+#huntr-react-container-2 .ql-editor ul li:not(.ql-direction-rtl) {
+  padding-left: 1.5em;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-direction-rtl,
+#huntr-react-container-2 .ql-editor ul li.ql-direction-rtl {
+  padding-right: 1.5em;
+}
+#huntr-react-container-2 .ql-editor ol li {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-0;
+}
+#huntr-react-container-2 .ql-editor ol li:before {
+  content: counter(list-0, decimal) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-1 {
+  counter-increment: list-1;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-1:before {
+  content: counter(list-1, lower-alpha) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-1 {
+  counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-2 {
+  counter-increment: list-2;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-2:before {
+  content: counter(list-2, lower-roman) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-2 {
+  counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-3 {
+  counter-increment: list-3;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-3:before {
+  content: counter(list-3, decimal) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-3 {
+  counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-4 {
+  counter-increment: list-4;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-4:before {
+  content: counter(list-4, lower-alpha) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-4 {
+  counter-reset: list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-5 {
+  counter-increment: list-5;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-5:before {
+  content: counter(list-5, lower-roman) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-5 {
+  counter-reset: list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-6 {
+  counter-increment: list-6;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-6:before {
+  content: counter(list-6, decimal) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-6 {
+  counter-reset: list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-7 {
+  counter-increment: list-7;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-7:before {
+  content: counter(list-7, lower-alpha) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-7 {
+  counter-reset: list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-8 {
+  counter-increment: list-8;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-8:before {
+  content: counter(list-8, lower-roman) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-8 {
+  counter-reset: list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-9 {
+  counter-increment: list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-9:before {
+  content: counter(list-9, decimal) '. ';
+}
+#huntr-react-container-2 .ql-editor .ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 3em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 4.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 3em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 4.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 6em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 7.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 6em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 7.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 9em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 10.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 9em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 10.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 12em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 13.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 12em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 13.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 15em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 16.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 15em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 16.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 18em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 19.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 18em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 19.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 21em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 22.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 21em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 22.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 24em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 25.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 24em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 25.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 27em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 28.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 27em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 28.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-video {
+  display: block;
+  max-width: 100%;
+}
+#huntr-react-container-2 .ql-editor .ql-video.ql-align-center {
+  margin: 0 auto;
+}
+#huntr-react-container-2 .ql-editor .ql-video.ql-align-right {
+  margin: 0 0 0 auto;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-black {
+  background-color: #000;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-red {
+  background-color: #e60000;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-orange {
+  background-color: #f90;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-yellow {
+  background-color: #ff0;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-green {
+  background-color: #008a00;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-blue {
+  background-color: #06c;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-purple {
+  background-color: #93f;
+}
+#huntr-react-container-2 .ql-editor .ql-color-white {
+  color: #fff;
+}
+#huntr-react-container-2 .ql-editor .ql-color-red {
+  color: #e60000;
+}
+#huntr-react-container-2 .ql-editor .ql-color-orange {
+  color: #f90;
+}
+#huntr-react-container-2 .ql-editor .ql-color-yellow {
+  color: #ff0;
+}
+#huntr-react-container-2 .ql-editor .ql-color-green {
+  color: #008a00;
+}
+#huntr-react-container-2 .ql-editor .ql-color-blue {
+  color: #06c;
+}
+#huntr-react-container-2 .ql-editor .ql-color-purple {
+  color: #93f;
+}
+#huntr-react-container-2 .ql-editor .ql-font-serif {
+  font-family: Georgia, Times New Roman, serif;
+}
+#huntr-react-container-2 .ql-editor .ql-font-monospace {
+  font-family: Monaco, Courier New, monospace;
+}
+#huntr-react-container-2 .ql-editor .ql-size-small {
+  font-size: 0.75em;
+}
+#huntr-react-container-2 .ql-editor .ql-size-large {
+  font-size: 1.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-size-huge {
+  font-size: 2.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-direction-rtl {
+  direction: rtl;
+  text-align: inherit;
+}
+#huntr-react-container-2 .ql-editor .ql-align-center {
+  text-align: center;
+}
+#huntr-react-container-2 .ql-editor .ql-align-justify {
+  text-align: justify;
+}
+#huntr-react-container-2 .ql-editor .ql-align-right {
+  text-align: right;
+}
+#huntr-react-container-2 .ql-editor .ql-embed-selected {
+  border: 1px solid #777;
+  user-select: none;
+}
+#huntr-react-container-2 .ql-editor.ql-blank::before {
+  color: rgba(25,4,69,0.4);
+  content: attr(data-placeholder);
+  font-style: normal;
+  pointer-events: none;
+  position: absolute;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar:after,
+#huntr-react-container-2 .ql-snow .ql-toolbar:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button,
+#huntr-react-container-2 .ql-snow .ql-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 24px;
+  padding: 3px 5px;
+  width: 28px;
+  box-shadow: none;
+  min-height: 1em;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button svg,
+#huntr-react-container-2 .ql-snow .ql-toolbar button svg {
+  float: left;
+  height: 100%;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button:active:hover,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:active:hover {
+  outline: none;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar input.ql-image[type=file],
+#huntr-react-container-2 .ql-snow .ql-toolbar input.ql-image[type=file] {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #06c;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+  fill: #06c;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+  stroke: #06c;
+}
+@media (pointer: coarse) {
+  .ql-snow.ql-toolbar button:hover:not(.ql-active),
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) {
+    color: #444;
+  }
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-fill,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-fill,
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill {
+    fill: #444;
+  }
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter {
+    stroke: #444;
+  }
+}
+#huntr-react-container-2 .ql-snow {
+  box-sizing: border-box;
+}
+#huntr-react-container-2 .ql-snow * {
+  box-sizing: border-box;
+}
+#huntr-react-container-2 .ql-snow .ql-hidden {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow .ql-out-bottom,
+#huntr-react-container-2 .ql-snow .ql-out-top {
+  visibility: hidden;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip {
+  position: absolute;
+  transform: translateY(10px);
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a {
+  cursor: pointer;
+  text-decoration: none;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-flip {
+  transform: translateY(-10px);
+}
+#huntr-react-container-2 .ql-snow .ql-formats {
+  display: inline-block;
+  vertical-align: middle;
+}
+#huntr-react-container-2 .ql-snow .ql-formats:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+#huntr-react-container-2 .ql-snow .ql-stroke {
+  fill: none;
+  stroke: #444;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+#huntr-react-container-2 .ql-snow .ql-stroke-miter {
+  fill: none;
+  stroke: #444;
+  stroke-miterlimit: 10;
+  stroke-width: 2;
+}
+#huntr-react-container-2 .ql-snow .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-stroke.ql-fill {
+  fill: #444;
+}
+#huntr-react-container-2 .ql-snow .ql-empty {
+  fill: none;
+}
+#huntr-react-container-2 .ql-snow .ql-even {
+  fill-rule: evenodd;
+}
+#huntr-react-container-2 .ql-snow .ql-thin,
+#huntr-react-container-2 .ql-snow .ql-stroke.ql-thin {
+  stroke-width: 1;
+}
+#huntr-react-container-2 .ql-snow .ql-transparent {
+  opacity: 0.4;
+}
+#huntr-react-container-2 .ql-snow .ql-direction svg:last-child {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow .ql-direction.ql-active svg:last-child {
+  display: inline;
+}
+#huntr-react-container-2 .ql-snow .ql-direction.ql-active svg:first-child {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h1 {
+  font-size: 2em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h2 {
+  font-size: 1.5em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h3 {
+  font-size: 1.17em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h4 {
+  font-size: 1em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h5 {
+  font-size: 0.83em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h6 {
+  font-size: 0.67em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor a {
+  text-decoration: underline;
+}
+#huntr-react-container-2 .ql-snow .ql-editor blockquote {
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor code,
+#huntr-react-container-2 .ql-snow .ql-editor pre {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor pre {
+  white-space: pre-wrap;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor code {
+  font-size: 85%;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor code:before,
+#huntr-react-container-2 .ql-snow .ql-editor code:after {
+  content: "\A0";
+  letter-spacing: -2px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor pre.ql-syntax {
+  background-color: #23241f;
+  color: #f8f8f2;
+  overflow: visible;
+}
+#huntr-react-container-2 .ql-snow .ql-editor img {
+  max-width: 100%;
+}
+#huntr-react-container-2 .ql-snow .ql-picker {
+  color: #444;
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  height: 24px;
+  position: relative;
+  vertical-align: middle;
+}
+#huntr-react-container-2 .ql-snow .ql-picker-label {
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 2px;
+  position: relative;
+  width: 100%;
+}
+#huntr-react-container-2 .ql-snow .ql-picker-label::before {
+  display: inline-block;
+  line-height: 22px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker-options {
+  background-color: #fff;
+  display: none;
+  min-width: 100%;
+  padding: 4px 8px;
+  position: absolute;
+  white-space: nowrap;
+}
+#huntr-react-container-2 .ql-snow .ql-picker-options .ql-picker-item {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color: #ccc;
+  z-index: 2;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-fill {
+  fill: #ccc;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-stroke {
+  stroke: #ccc;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  display: block;
+  margin-top: -1px;
+  top: 100%;
+  z-index: 1;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker,
+#huntr-react-container-2 .ql-snow .ql-icon-picker {
+  width: 28px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker .ql-picker-label,
+#huntr-react-container-2 .ql-snow .ql-icon-picker .ql-picker-label {
+  padding: 2px 4px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker .ql-picker-label svg,
+#huntr-react-container-2 .ql-snow .ql-icon-picker .ql-picker-label svg {
+  right: 4px;
+}
+#huntr-react-container-2 .ql-snow .ql-icon-picker .ql-picker-options {
+  padding: 4px 0px;
+}
+#huntr-react-container-2 .ql-snow .ql-icon-picker .ql-picker-item {
+  height: 24px;
+  width: 24px;
+  padding: 2px 4px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker .ql-picker-options {
+  padding: 3px 5px;
+  width: 152px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker .ql-picker-item {
+  border: 1px solid transparent;
+  float: left;
+  height: 16px;
+  margin: 2px;
+  padding: 0px;
+  width: 16px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+  position: absolute;
+  margin-top: -9px;
+  right: 0;
+  top: 50%;
+  width: 18px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-label[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-label]:not([data-label=''])::before {
+  content: attr(data-label);
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header {
+  width: 98px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item::before {
+  content: 'Normal';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  content: 'Heading 1';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  content: 'Heading 2';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  content: 'Heading 3';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  content: 'Heading 4';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  content: 'Heading 5';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  content: 'Heading 6';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  font-size: 2em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  font-size: 1.5em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  font-size: 1.17em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  font-size: 1em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  font-size: 0.83em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  font-size: 0.67em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font {
+  width: 108px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-label::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  content: 'Sans Serif';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  content: 'Serif';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  content: 'Monospace';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  font-family: Georgia, Times New Roman, serif;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  font-family: Monaco, Courier New, monospace;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size {
+  width: 98px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: 'Normal';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  content: 'Small';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  content: 'Large';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  content: 'Huge';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  font-size: 10px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  font-size: 18px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  font-size: 32px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker.ql-background .ql-picker-item {
+  background-color: #fff;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker.ql-color .ql-picker-item {
+  background-color: #000;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow {
+  border-bottom: 1px solid #ECE9F2;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 8px;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-formats {
+  margin-right: 15px;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-picker-label {
+  border: 1px solid transparent;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-picker-options {
+  border: 1px solid transparent;
+  box-shadow: rgba(0,0,0,0.2) 0 2px 8px;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border-color: #ccc;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  border-color: #ccc;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-color-picker .ql-picker-item.ql-selected,
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-color-picker .ql-picker-item:hover {
+  border-color: #000;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-top: 0px;
+  padding-bottom: 40px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px #ddd;
+  color: #444;
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip::before {
+  content: "Visit URL:";
+  line-height: 26px;
+  margin-right: 8px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip input[type=text] {
+  display: none;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  height: 26px;
+  margin: 0px;
+  padding: 3px 5px;
+  width: 170px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a.ql-preview {
+  display: inline-block;
+  max-width: 200px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a.ql-action::after {
+  border-right: 1px solid #ccc;
+  content: 'Edit';
+  margin-left: 16px;
+  padding-right: 8px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a.ql-remove::before {
+  content: 'Remove';
+  margin-left: 8px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a {
+  line-height: 26px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-editing a.ql-preview,
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-editing a.ql-remove {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-editing input[type=text] {
+  display: inline-block;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+  border-right: 0px;
+  content: 'Save';
+  padding-right: 0px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip[data-mode=link]::before {
+  content: "Enter link:";
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip[data-mode=formula]::before {
+  content: "Enter formula:";
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip[data-mode=video]::before {
+  content: "Enter video:";
+}
+#huntr-react-container-2 .ql-snow a {
+  color: #06c;
+}
+</style><style type="text/css">.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  margin-left: -8px;
+  position: absolute;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  box-sizing: content-box;
+  position: absolute;
+  border: 8px solid transparent;
+  height: 0;
+  width: 1px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  content: "";
+  z-index: -1;
+  border-width: 8px;
+  left: -8px;
+  border-bottom-color: #aeaeae;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  top: 0;
+  margin-top: -8px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+  border-top: none;
+  border-bottom-color: #f0f0f0;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+  top: -1px;
+  border-bottom-color: #aeaeae;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  bottom: 0;
+  margin-bottom: -8px;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  border-bottom: none;
+  border-top-color: #fff;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  bottom: -1px;
+  border-top-color: #aeaeae;
+}
+
+.react-datepicker-wrapper {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+}
+
+.react-datepicker {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #aeaeae;
+  border-radius: 0.3rem;
+  display: inline-block;
+  position: relative;
+}
+
+.react-datepicker--time-only .react-datepicker__triangle {
+  left: 35px;
+}
+
+.react-datepicker--time-only .react-datepicker__time-container {
+  border-left: 0;
+}
+
+.react-datepicker--time-only .react-datepicker__time,
+.react-datepicker--time-only .react-datepicker__time-box {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__triangle {
+  position: absolute;
+  left: 50px;
+}
+
+.react-datepicker-popper {
+  z-index: 1;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] {
+  margin-top: 10px;
+}
+
+.react-datepicker-popper[data-placement="bottom-end"] .react-datepicker__triangle, .react-datepicker-popper[data-placement="top-end"] .react-datepicker__triangle {
+  left: auto;
+  right: 50px;
+}
+
+.react-datepicker-popper[data-placement^="top"] {
+  margin-bottom: 10px;
+}
+
+.react-datepicker-popper[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.react-datepicker-popper[data-placement^="right"] .react-datepicker__triangle {
+  left: auto;
+  right: 42px;
+}
+
+.react-datepicker-popper[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.react-datepicker-popper[data-placement^="left"] .react-datepicker__triangle {
+  left: 42px;
+  right: auto;
+}
+
+.react-datepicker__header {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #aeaeae;
+  border-top-left-radius: 0.3rem;
+  padding-top: 8px;
+  position: relative;
+}
+
+.react-datepicker__header--time {
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.react-datepicker__header--time:not(.react-datepicker__header--time--only) {
+  border-top-left-radius: 0;
+}
+
+.react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+  border-top-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-dropdown-container--select,
+.react-datepicker__month-dropdown-container--select,
+.react-datepicker__month-year-dropdown-container--select,
+.react-datepicker__year-dropdown-container--scroll,
+.react-datepicker__month-dropdown-container--scroll,
+.react-datepicker__month-year-dropdown-container--scroll {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  margin-top: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.944rem;
+}
+
+.react-datepicker-time__header {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.react-datepicker__navigation {
+  background: none;
+  line-height: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  width: 0;
+  padding: 0;
+  border: 0.45rem solid transparent;
+  z-index: 1;
+  height: 10px;
+  width: 10px;
+  text-indent: -999em;
+  overflow: hidden;
+}
+
+.react-datepicker__navigation--previous {
+  left: 10px;
+  border-right-color: #ccc;
+}
+
+.react-datepicker__navigation--previous:hover {
+  border-right-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--previous--disabled, .react-datepicker__navigation--previous--disabled:hover {
+  border-right-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__navigation--next {
+  right: 10px;
+  border-left-color: #ccc;
+}
+
+.react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+  right: 95px;
+}
+
+.react-datepicker__navigation--next:hover {
+  border-left-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--next--disabled, .react-datepicker__navigation--next--disabled:hover {
+  border-left-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__navigation--years {
+  position: relative;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-datepicker__navigation--years-previous {
+  top: 4px;
+  border-top-color: #ccc;
+}
+
+.react-datepicker__navigation--years-previous:hover {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--years-upcoming {
+  top: -4px;
+  border-bottom-color: #ccc;
+}
+
+.react-datepicker__navigation--years-upcoming:hover {
+  border-bottom-color: #b3b3b3;
+}
+
+.react-datepicker__month-container {
+  float: left;
+}
+
+.react-datepicker__year {
+  margin: 0.4rem;
+  text-align: center;
+}
+
+.react-datepicker__year-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 180px;
+}
+
+.react-datepicker__year .react-datepicker__year-text {
+  display: inline-block;
+  width: 4rem;
+  margin: 2px;
+}
+
+.react-datepicker__month {
+  margin: 0.4rem;
+  text-align: center;
+}
+
+.react-datepicker__month .react-datepicker__month-text,
+.react-datepicker__month .react-datepicker__quarter-text {
+  display: inline-block;
+  width: 4rem;
+  margin: 2px;
+}
+
+.react-datepicker__input-time-container {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin: 5px 0 10px 15px;
+  text-align: left;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__caption {
+  display: inline-block;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container {
+  display: inline-block;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input {
+  width: auto;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"]::-webkit-inner-spin-button,
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"] {
+  -moz-appearance: textfield;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__delimiter {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.react-datepicker__time-container {
+  float: right;
+  border-left: 1px solid #aeaeae;
+  width: 85px;
+}
+
+.react-datepicker__time-container--with-today-button {
+  display: inline;
+  border: 1px solid #aeaeae;
+  border-radius: 0.3rem;
+  position: absolute;
+  right: -72px;
+  top: 0;
+}
+
+.react-datepicker__time-container .react-datepicker__time {
+  position: relative;
+  background: white;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  width: 85px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list {
+  list-style: none;
+  margin: 0;
+  height: calc(195px + (1.7rem / 2));
+  overflow-y: scroll;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+  height: 30px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+  background-color: #216ba5;
+  color: white;
+  font-weight: bold;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected:hover {
+  background-color: #216ba5;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled {
+  color: #ccc;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled:hover {
+  cursor: default;
+  background-color: transparent;
+}
+
+.react-datepicker__week-number {
+  color: #ccc;
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.166rem;
+}
+
+.react-datepicker__week-number.react-datepicker__week-number--clickable {
+  cursor: pointer;
+}
+
+.react-datepicker__week-number.react-datepicker__week-number--clickable:hover {
+  border-radius: 0.3rem;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__day-names,
+.react-datepicker__week {
+  white-space: nowrap;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #000;
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.166rem;
+}
+
+.react-datepicker__month--selected, .react-datepicker__month--in-selecting-range, .react-datepicker__month--in-range,
+.react-datepicker__quarter--selected,
+.react-datepicker__quarter--in-selecting-range,
+.react-datepicker__quarter--in-range {
+  border-radius: 0.3rem;
+  background-color: #216ba5;
+  color: #fff;
+}
+
+.react-datepicker__month--selected:hover, .react-datepicker__month--in-selecting-range:hover, .react-datepicker__month--in-range:hover,
+.react-datepicker__quarter--selected:hover,
+.react-datepicker__quarter--in-selecting-range:hover,
+.react-datepicker__quarter--in-range:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__month--disabled,
+.react-datepicker__quarter--disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+.react-datepicker__month--disabled:hover,
+.react-datepicker__quarter--disabled:hover {
+  cursor: default;
+  background-color: transparent;
+}
+
+.react-datepicker__day,
+.react-datepicker__month-text,
+.react-datepicker__quarter-text,
+.react-datepicker__year-text {
+  cursor: pointer;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover,
+.react-datepicker__year-text:hover {
+  border-radius: 0.3rem;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__day--today,
+.react-datepicker__month-text--today,
+.react-datepicker__quarter-text--today,
+.react-datepicker__year-text--today {
+  font-weight: bold;
+}
+
+.react-datepicker__day--highlighted,
+.react-datepicker__month-text--highlighted,
+.react-datepicker__quarter-text--highlighted,
+.react-datepicker__year-text--highlighted {
+  border-radius: 0.3rem;
+  background-color: #3dcc4a;
+  color: #fff;
+}
+
+.react-datepicker__day--highlighted:hover,
+.react-datepicker__month-text--highlighted:hover,
+.react-datepicker__quarter-text--highlighted:hover,
+.react-datepicker__year-text--highlighted:hover {
+  background-color: #32be3f;
+}
+
+.react-datepicker__day--highlighted-custom-1,
+.react-datepicker__month-text--highlighted-custom-1,
+.react-datepicker__quarter-text--highlighted-custom-1,
+.react-datepicker__year-text--highlighted-custom-1 {
+  color: magenta;
+}
+
+.react-datepicker__day--highlighted-custom-2,
+.react-datepicker__month-text--highlighted-custom-2,
+.react-datepicker__quarter-text--highlighted-custom-2,
+.react-datepicker__year-text--highlighted-custom-2 {
+  color: green;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  border-radius: 0.3rem;
+  background-color: #216ba5;
+  color: #fff;
+}
+
+.react-datepicker__day--selected:hover, .react-datepicker__day--in-selecting-range:hover, .react-datepicker__day--in-range:hover,
+.react-datepicker__month-text--selected:hover,
+.react-datepicker__month-text--in-selecting-range:hover,
+.react-datepicker__month-text--in-range:hover,
+.react-datepicker__quarter-text--selected:hover,
+.react-datepicker__quarter-text--in-selecting-range:hover,
+.react-datepicker__quarter-text--in-range:hover,
+.react-datepicker__year-text--selected:hover,
+.react-datepicker__year-text--in-selecting-range:hover,
+.react-datepicker__year-text--in-range:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  border-radius: 0.3rem;
+  background-color: #2a87d0;
+  color: #fff;
+}
+
+.react-datepicker__day--keyboard-selected:hover,
+.react-datepicker__month-text--keyboard-selected:hover,
+.react-datepicker__quarter-text--keyboard-selected:hover,
+.react-datepicker__year-text--keyboard-selected:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__day--in-selecting-range ,
+.react-datepicker__month-text--in-selecting-range ,
+.react-datepicker__quarter-text--in-selecting-range ,
+.react-datepicker__year-text--in-selecting-range {
+  background-color: rgba(33, 107, 165, 0.5);
+}
+
+.react-datepicker__month--selecting-range .react-datepicker__day--in-range , .react-datepicker__month--selecting-range
+.react-datepicker__month-text--in-range , .react-datepicker__month--selecting-range
+.react-datepicker__quarter-text--in-range , .react-datepicker__month--selecting-range
+.react-datepicker__year-text--in-range {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.react-datepicker__day--disabled,
+.react-datepicker__month-text--disabled,
+.react-datepicker__quarter-text--disabled,
+.react-datepicker__year-text--disabled {
+  cursor: default;
+  color: #ccc;
+}
+
+.react-datepicker__day--disabled:hover,
+.react-datepicker__month-text--disabled:hover,
+.react-datepicker__quarter-text--disabled:hover,
+.react-datepicker__year-text--disabled:hover {
+  background-color: transparent;
+}
+
+.react-datepicker__month-text.react-datepicker__month--selected:hover, .react-datepicker__month-text.react-datepicker__month--in-range:hover, .react-datepicker__month-text.react-datepicker__quarter--selected:hover, .react-datepicker__month-text.react-datepicker__quarter--in-range:hover,
+.react-datepicker__quarter-text.react-datepicker__month--selected:hover,
+.react-datepicker__quarter-text.react-datepicker__month--in-range:hover,
+.react-datepicker__quarter-text.react-datepicker__quarter--selected:hover,
+.react-datepicker__quarter-text.react-datepicker__quarter--in-range:hover {
+  background-color: #216ba5;
+}
+
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover {
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.react-datepicker__year-read-view,
+.react-datepicker__month-read-view,
+.react-datepicker__month-year-read-view {
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+}
+
+.react-datepicker__year-read-view:hover,
+.react-datepicker__month-read-view:hover,
+.react-datepicker__month-year-read-view:hover {
+  cursor: pointer;
+}
+
+.react-datepicker__year-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__year-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-year-read-view:hover .react-datepicker__month-read-view--down-arrow {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  border-top-color: #ccc;
+  float: right;
+  margin-left: 20px;
+  top: 8px;
+  position: relative;
+  border-width: 0.45rem;
+}
+
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown,
+.react-datepicker__month-year-dropdown {
+  background-color: #f0f0f0;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 30px;
+  z-index: 1;
+  text-align: center;
+  border-radius: 0.3rem;
+  border: 1px solid #aeaeae;
+}
+
+.react-datepicker__year-dropdown:hover,
+.react-datepicker__month-dropdown:hover,
+.react-datepicker__month-year-dropdown:hover {
+  cursor: pointer;
+}
+
+.react-datepicker__year-dropdown--scrollable,
+.react-datepicker__month-dropdown--scrollable,
+.react-datepicker__month-year-dropdown--scrollable {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.react-datepicker__year-option,
+.react-datepicker__month-option,
+.react-datepicker__month-year-option {
+  line-height: 20px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-datepicker__year-option:first-of-type,
+.react-datepicker__month-option:first-of-type,
+.react-datepicker__month-year-option:first-of-type {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-option:last-of-type,
+.react-datepicker__month-option:last-of-type,
+.react-datepicker__month-year-option:last-of-type {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-option:hover,
+.react-datepicker__month-option:hover,
+.react-datepicker__month-year-option:hover {
+  background-color: #ccc;
+}
+
+.react-datepicker__year-option:hover .react-datepicker__navigation--years-upcoming,
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-upcoming,
+.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-upcoming {
+  border-bottom-color: #b3b3b3;
+}
+
+.react-datepicker__year-option:hover .react-datepicker__navigation--years-previous,
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-previous,
+.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-previous {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__year-option--selected,
+.react-datepicker__month-option--selected,
+.react-datepicker__month-year-option--selected {
+  position: absolute;
+  left: 15px;
+}
+
+.react-datepicker__close-icon {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0px 6px 0px 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.react-datepicker__close-icon::after {
+  cursor: pointer;
+  background-color: #216ba5;
+  color: #fff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  padding: 2px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  content: "\D7";
+}
+
+.react-datepicker__today-button {
+  background: #f0f0f0;
+  border-top: 1px solid #aeaeae;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
+  clear: left;
+}
+
+.react-datepicker__portal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 2147483647;
+}
+
+.react-datepicker__portal .react-datepicker__day-name,
+.react-datepicker__portal .react-datepicker__day,
+.react-datepicker__portal .react-datepicker__time-name {
+  width: 3rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 400px), (max-height: 550px) {
+  .react-datepicker__portal .react-datepicker__day-name,
+  .react-datepicker__portal .react-datepicker__day,
+  .react-datepicker__portal .react-datepicker__time-name {
+    width: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.react-datepicker__portal .react-datepicker__current-month,
+.react-datepicker__portal .react-datepicker-time__header {
+  font-size: 1.44rem;
+}
+
+.react-datepicker__portal .react-datepicker__navigation {
+  border: 0.81rem solid transparent;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous {
+  border-right-color: #ccc;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous:hover {
+  border-right-color: #b3b3b3;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous--disabled, .react-datepicker__portal .react-datepicker__navigation--previous--disabled:hover {
+  border-right-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next {
+  border-left-color: #ccc;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next:hover {
+  border-left-color: #b3b3b3;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next--disabled, .react-datepicker__portal .react-datepicker__navigation--next--disabled:hover {
+  border-left-color: #e6e6e6;
+  cursor: default;
+}
+</style><style data-emotion="css" data-s=""></style><style type="text/css">@font-face { font-family: 'simple-line-icons'; src: url('chrome-extension://mihdfbecejheednfigjpdacgeilhlmnf/assets/fonts/Simple-Line-Icons.ttf') format('truetype'); }</style><script src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/social_sns_config_min.js" type="text/javascript" defer="" async=""></script><meta http-equiv="origin-trial" content="Azy2GzGQxPvGmQwVDdEL1jRuKSXIdSSASA06JCA6PCeaVHpFYf8Rw5/q+9adc9CrBTxfCeUwxkuDM4PWEmdqywwAAACKeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZWFkc2VydmljZXMuY29tOjQ0MyIsImZlYXR1cmUiOiJQcml2YWN5U2FuZGJveEFkc0FQSXMiLCJleHBpcnkiOjE2NjEyOTkxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/f(1).txt"></script><script type="text/javascript" async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/f(2).txt"></script><script async="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/modules.61e17720cf639c3e96a7.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+  <body><div the_imports="" style="display:none;"><input id="idImportFile" type="file" name="files"><button id="idImportUpload" type="file" name="files"></button></div><div the_imports="" style="display:none;"><input id="idImportFile" type="file" name="files"><button id="idImportUpload" type="file" name="files"></button></div><div the_imports="" style="display:none;"><input id="idImportFile" type="file" name="files"><button id="idImportUpload" type="file" name="files"></button></div><div the_imports="" style="display:none;"><input id="idImportFile" type="file" name="files"><button id="idImportUpload" type="file" name="files"></button></div><div the_imports="" style="display:none;"><input id="idImportFile" type="file" name="files"><button id="idImportUpload" type="file" name="files"></button></div>
+    <div id="root"><main class="css-ydv0ye" style=""><div class="css-1drb7v5"><header class="css-hxhp83"><div class="css-197dxto"><a href="https://inflearn.com/course/%EB%91%90%EC%9E%87-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9B%B9%EA%B0%9C%EB%B0%9C/dashboard" class="css-f032mp"><span class="css-3h0hpn"><svg width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><title>LinkIcon</title><path fill="#ffffff" fill-rule="evenodd" d="M12.031 7h-.437c-.121 0-.219.098-.219.219v5.468c0 .242-.196.438-.438.438H1.313c-.242 0-.438-.196-.438-.438V3.063c0-.242.196-.438.438-.438H6.78c.121 0 .219-.098.219-.219V1.97c0-.121-.098-.219-.219-.219H1.313C.588 1.75 0 2.338 0 3.063v9.624C0 13.412.588 14 1.313 14h9.624c.725 0 1.313-.588 1.313-1.313V7.22c0-.121-.098-.219-.219-.219zm1.64-7L9.954.01c-.181 0-.328.146-.328.327v.274c0 .181.147.328.328.328l2.461-.01.02.02-8.838 8.836c-.062.062-.097.145-.097.233 0 .087.035.17.097.232l.155.155c.061.062.145.096.232.096.087 0 .171-.034.233-.096l8.835-8.837.02.019-.01 2.461c0 .181.147.328.328.328h.274c.18 0 .328-.147.328-.328L14 .328C14 .147 13.853 0 13.672 0z"></path></svg></span><span>강의 대시보드</span></a><p class="css-mrzke1">Navigation Bar</p></div><div class="css-197dxto"><button class="css-kj3t0k"><span class="css-t4yeqa"><svg width="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>StarIcon</title><path data-testid="review-star" fill="#fff" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></span><span>수강평 작성하기</span></button></div></header><div class="css-df2ktj"><div class="css-1j3kq2f"><div class="css-1cgce7k shaka-video-container" data-shaka-player-container="" shaka-controls="true" style="cursor: none;"><video autoplay="" playsinline="" class="css-w1atjl shaka-video" src="blob:https://www.inflearn.com/8f2a1063-a2c6-4a2d-a3e7-0a6e026fc335"></video><div class="shaka-controls-container"><div class="shaka-scrim-container"></div><div class="shaka-hidden-fast-forward-container"><div class="shaka-fast-forward-oncontrolscontainer"><span>0s</span><span class="shaka-forward-rewind-oncontrolscontainer-icon">fast_forward</span></div></div><div class="shaka-hidden-rewind-container"><div class="shaka-rewind-oncontrolscontainer"><span>0s</span><span class="shaka-forward-rewind-oncontrolscontainer-icon">fast_rewind</span></div></div><div class="shaka-server-side-ad-container"></div><div class="shaka-bottom-controls shaka-no-propagation"><div class="shaka-ad-controls shaka-hidden"><div class="shaka-ad-position shaka-hidden"><span class="shaka-ad-position-span"></span></div><div class="shaka-ad-counter"><span class="shaka-ad-counter-span"></span></div></div><div class="shaka-controls-button-panel shaka-show-controls-on-mouse-over"><button class="shaka-small-play-button material-icons-round shaka-tooltip" aria-label="Pause">pause</button><button class="shaka-current-time" disabled="">3:05 / 8:22</button><div class="shaka-spacer" aria-hidden="true"></div><button class="shaka-mute-button material-icons-round shaka-tooltip" aria-label="Mute">volume_up</button><div class="shaka-range-container shaka-volume-bar-container" style="background: linear-gradient(to right, rgb(255, 255, 255) 100%, rgba(255, 255, 255, 0.54) 100%, rgba(255, 255, 255, 0.54) 100%);"><input class="shaka-range-element shaka-volume-bar" type="range" step="any" min="0" max="1" aria-label="Volume"></div><button class="shaka-fullscreen-button material-icons-round shaka-tooltip" aria-label="Full screen">fullscreen</button><button class="shaka-overflow-menu-button shaka-no-propagation material-icons-round shaka-tooltip" aria-label="More settings">more_vert</button></div><div class="shaka-range-container shaka-seek-bar-container" style="background: linear-gradient(to right, rgb(0, 196, 113) 31.0915%, rgb(0, 196, 113) 31.0915%, rgb(0, 196, 113) 36.9599%, rgba(255, 255, 255, 0.4) 36.9599%, rgba(255, 255, 255, 0.4) 41.8478%, rgba(255, 255, 255, 0.2) 41.8478%);"><div class="shaka-ad-markers" style="background: transparent;"></div><input class="shaka-range-element shaka-seek-bar shaka-no-propagation shaka-show-controls-on-mouse-over" type="range" step="any" min="0" max="502.5349999999989" aria-label="Seek"></div></div><div class="shaka-overflow-menu shaka-no-propagation shaka-show-controls-on-mouse-over shaka-hidden"><button class="shaka-overflow-button shaka-resolution-button shaka-tooltip-status" shaka-status="Auto" aria-label="Resolution"><i class="material-icons-round">settings</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Resolution</span><span class="shaka-current-selection-span">Auto</span></label></button><button class="shaka-overflow-button shaka-playbackrate-button shaka-tooltip-status" aria-label="Playback speed" shaka-status="1x"><i class="material-icons-round">slow_motion_video</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Playback speed</span><span class="shaka-current-selection-span">1x</span></label></button><button class="shaka-pip-button shaka-tooltip" aria-label="Enter Picture-in-Picture"><i class="material-icons-round">picture_in_picture_alt</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Picture-in-Picture</span><span class="shaka-current-selection-span">Off</span></label></button></div><div class="shaka-no-propagation shaka-show-controls-on-mouse-over shaka-settings-menu shaka-hidden shaka-resolutions"><button class="shaka-back-to-overflow-button" aria-label="Resolution"><i class="material-icons-round">arrow_back</i><span>Resolution</span></button><button class="explicit-resolution"><span>720p</span></button><button class="explicit-resolution"><span>540p</span></button><button class="shaka-enable-abr-button" aria-selected="true"><span class="shaka-auto-span shaka-chosen-item">Auto</span><i class="material-icons-round shaka-chosen-item" aria-hidden="true">done</i></button></div><div class="shaka-no-propagation shaka-show-controls-on-mouse-over shaka-settings-menu shaka-hidden shaka-playback-rates"><button class="shaka-back-to-overflow-button" aria-label="Back"><i class="material-icons-round">arrow_back</i><span>Playback speed</span></button><button><span>0.5x</span></button><button><span>0.75x</span></button><button aria-selected="true"><span class="shaka-chosen-item">1x</span><i class="material-icons-round shaka-chosen-item" aria-hidden="true">done</i></button><button><span>1.25x</span></button><button><span>1.5x</span></button><button><span>1.75x</span></button><button><span>2x</span></button></div></div><div class="shaka-client-side-ad-container shaka-hidden"></div><div class="shaka-spinner-container shaka-hidden"><div class="shaka-spinner"><svg class="shaka-spinner-svg" viewBox="0 0 30 30"><circle class="shaka-spinner-path" cx="15" cy="15" r="14.5" fill="none" stroke-width="1" stroke-miterlimit="10"></circle></svg></div></div><div class="shaka-text-container" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-end;"></div></div></div><div class="css-182odza"><button type="button" class="css-1xq1rmk"><p class="css-mrzke1">Navigation Bar</p><span><svg width="12" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><title>AngleDownIcon</title><path fill="#212529" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path></svg></span></button><div data-testid="mobileDashboardMyVoucher" class="css-frdyop"><p class="css-1pqj6dl"><span>강의명 : </span>Do It! 장고+부트스트랩: 파이썬 웹개발의 정석</p><p class="css-1r740cn">수강 기한 : 무제한</p><p class="css-1ld38rh">진도율 : 11강/102강 (10.78%) | 시간: 101분/1605분</p><progress value="10.78" max="100" class="css-16fgrga"></progress></div><ul class="css-bpwffa"><li><a href="https://inflearn.com/course/%EB%91%90%EC%9E%87-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9B%B9%EA%B0%9C%EB%B0%9C/dashboard" class="css-0"><span class="css-1rfckb6"><span><svg width="18" aria-hidden="true" focusable="false" data-prefix="far" data-icon="external-link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>LinkFarIcon</title><path fill="#212529" d="M497.6,0,334.4.17A14.4,14.4,0,0,0,320,14.57V47.88a14.4,14.4,0,0,0,14.69,14.4l73.63-2.72,2.06,2.06L131.52,340.49a12,12,0,0,0,0,17l23,23a12,12,0,0,0,17,0L450.38,101.62l2.06,2.06-2.72,73.63A14.4,14.4,0,0,0,464.12,192h33.31a14.4,14.4,0,0,0,14.4-14.4L512,14.4A14.4,14.4,0,0,0,497.6,0ZM432,288H416a16,16,0,0,0-16,16V458a6,6,0,0,1-6,6H54a6,6,0,0,1-6-6V118a6,6,0,0,1,6-6H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V304A16,16,0,0,0,432,288Z"></path></svg></span><span>나가기</span></span></a></li><li><span class="css-17gsa7r"><span><svg width="18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>StarIcon</title><path data-testid="review-star" fill="#212529" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></span><span>수강평</span></span></li><li><span class="css-1rfckb6"><span><svg width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14"><title>CheckFarIcon</title><path fill="#212529" fill-rule="evenodd" d="M16.08.14L5.725 10.599 1.92 6.756c-.185-.187-.484-.187-.668 0L.138 7.88c-.184.187-.184.489 0 .675l5.253 5.305c.184.187.483.187.668 0L17.862 1.94c.184-.187.184-.49 0-.676L16.748.14c-.184-.187-.483-.187-.668 0z"></path></svg></span><span>봤어요</span></span></li><li><span class="css-1rfckb6"><span><svg width="18" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><title>ArrowLeftIcon</title><path fill="#212529" d="M229.9 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L94.569 282H436c6.627 0 12-5.373 12-12v-28c0-6.627-5.373-12-12-12H94.569l155.13-155.13c4.686-4.686 4.686-12.284 0-16.971L229.9 38.101c-4.686-4.686-12.284-4.686-16.971 0L3.515 247.515c-4.686 4.686-4.686 12.284 0 16.971L212.929 473.9c4.686 4.686 12.284 4.686 16.971-.001z"></path></svg></span><span>이전 수업</span></span></li><li><span class="css-1rfckb6"><span><svg width="18" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><title>ArrowRightIcon</title><path fill="#212529" d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z"></path></svg></span><span>다음 수업</span></span></li></ul></div></div><footer data-testid="unit-footer" class="css-uti4hk"><div><span class="css-1iqyy5y"><button type="button" class="css-u3b0qh"><span class="css-g194hl"><svg width="7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12"><title>AngleLeftIcon</title><path fill="#fff" fill-rule="evenodd" d="M.166 5.602L5.702.165c.22-.22.578-.22.799 0l.333.333c.221.22.221.576 0 .797L2.027 6l4.803 4.705c.22.22.22.577 0 .797l-.334.333c-.22.22-.578.22-.799 0L.162 6.398c-.217-.22-.217-.576.004-.796z"></path></svg></span>이전 수업</button></span><span class="css-1u4rtln"><span class="css-1iqyy5y"><button type="button" class="css-u3b0qh">봤어요</button></span></span><span class="css-1iqyy5y"><button type="button" class="css-u3b0qh">다음 수업<span class="css-g194hl"><svg width="7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12"><path fill="#fff" fill-rule="evenodd" d="M6.834 5.602L1.298.165c-.22-.22-.578-.22-.799 0L.166.498c-.221.22-.221.576 0 .797L4.973 6 .17 10.705c-.22.22-.22.577 0 .797l.334.333c.22.22.578.22.799 0l5.535-5.437c.217-.22.217-.576-.004-.796z"></path></svg></span></button></span></div></footer></div></main><div class="css-bb867w" style=""><ul data-testid="sidebar"><li aria-current="false"><button type="button" title="목차" aria-label="curriculum-tab-toggle-button" class="css-orgeeu"><svg width="24" height="19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 19"><title>ListIcon</title><path fill="#212529" fill-rule="evenodd" d="M3.75 14.615h-3c-.414 0-.75.328-.75.731v2.923c0 .404.336.731.75.731h3c.414 0 .75-.327.75-.73v-2.924c0-.403-.336-.73-.75-.73zM3.75 0h-3C.336 0 0 .327 0 .73v2.924c0 .403.336.73.75.73h3c.414 0 .75-.327.75-.73V.73C4.5.327 4.164 0 3.75 0zm0 7.308h-3c-.414 0-.75.327-.75.73v2.924c0 .403.336.73.75.73h3c.414 0 .75-.327.75-.73V8.038c0-.403-.336-.73-.75-.73zm19.5 8.038h-15c-.414 0-.75.327-.75.73v1.462c0 .404.336.731.75.731h15c.414 0 .75-.327.75-.73v-1.462c0-.404-.336-.73-.75-.73zm0-14.615h-15c-.414 0-.75.327-.75.73v1.462c0 .404.336.73.75.73h15c.414 0 .75-.326.75-.73V1.462c0-.404-.336-.731-.75-.731zm0 7.307h-15c-.414 0-.75.328-.75.731v1.462c0 .403.336.73.75.73h15c.414 0 .75-.327.75-.73V8.769c0-.403-.336-.73-.75-.73z"></path></svg></button></li><li aria-current="false"><button type="button" title="커뮤니티" aria-label="community-tab-toggle-button" class="css-orgeeu"><svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt-dots" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>CommentIcon</title><path fill="#212529" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zM128 240c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg></button></li><li aria-current="false"><button type="button" title="노트" aria-label="note-tab-toggle-button" class="css-orgeeu"><svg width="24" height="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><title>NoteIcon</title><path fill="#212529" fill-rule="evenodd" d="M4.816 6.2c0-.177.07-.346.196-.471.125-.125.294-.196.471-.196h9.967c.177 0 .347.07.472.196.125.125.195.294.195.471s-.07.346-.195.471-.295.196-.472.196H5.483c-.177 0-.346-.07-.471-.196-.125-.125-.196-.294-.196-.471v0zm.667 5.2h9.967c.177 0 .347-.07.472-.195s.195-.295.195-.472c0-.176-.07-.346-.195-.471s-.295-.195-.472-.195H5.483c-.177 0-.346.07-.471.195s-.196.295-.196.471c0 .177.07.347.196.472.125.125.294.195.471.195v0zm10.186 3.237c-.07-.024-.144-.037-.218-.037H5.483c-.177 0-.347.07-.472.195s-.195.295-.195.472.07.346.195.471.295.195.472.195h9.44l.746-1.296zM5.011 19.328c-.093.094-.157.212-.182.342-.026.129-.013.263.038.385.05.122.136.226.245.3.11.072.239.112.37.112h8.16v-1.334h-8.16c-.176 0-.346.07-.471.195v0zM2.717 25h15.5c.454 0 .89-.182 1.213-.504.322-.322.503-.758.503-1.213v-3.464l-.536.928c-.193.336-.467.62-.797.824v1.712c0 .101-.041.199-.113.27-.072.073-.17.113-.27.114h-15.5c-.101 0-.199-.041-.27-.113-.073-.072-.113-.17-.114-.271V2.717c0-.101.041-.199.113-.27.072-.073.17-.113.271-.114h15.5c.1 0 .198.041.27.113.072.072.113.17.113.271v6.848l1.333-2.309V2.717c0-.455-.181-.891-.503-1.213C19.108 1.182 18.67 1 18.216 1H2.717c-.455 0-.891.182-1.213.504C1.182 1.826 1 2.262 1 2.717v20.566c0 .455.182.891.504 1.213.322.322.758.504 1.213.504v0zm12.972-3.595l2.045-1.18c.115-.067.21-.162.277-.277l6.916-11.979c.072-.125.092-.275.054-.415-.037-.14-.129-.26-.255-.333l-1.72-.992c-.062-.036-.13-.06-.202-.07-.071-.008-.143-.004-.213.015-.07.018-.135.05-.192.094-.057.044-.105.099-.14.161l-6.916 11.978c-.067.115-.101.246-.101.378v2.362c0 .052.014.103.04.149.026.045.064.082.11.109.044.026.096.04.148.04.052 0 .104-.014.149-.04v0z" clip-rule="evenodd"></path></svg></button></li></ul></div><div class="css-m8edzb" style=""><ul class="css-15currb"><li aria-current="false" class="css-qvrrxd"><button type="button" aria-label="curriculum-tab-toggle-button" class="css-1vt6fuy"><span><svg width="24" height="19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 19"><title>ListIcon</title><path fill="#212529" fill-rule="evenodd" d="M3.75 14.615h-3c-.414 0-.75.328-.75.731v2.923c0 .404.336.731.75.731h3c.414 0 .75-.327.75-.73v-2.924c0-.403-.336-.73-.75-.73zM3.75 0h-3C.336 0 0 .327 0 .73v2.924c0 .403.336.73.75.73h3c.414 0 .75-.327.75-.73V.73C4.5.327 4.164 0 3.75 0zm0 7.308h-3c-.414 0-.75.327-.75.73v2.924c0 .403.336.73.75.73h3c.414 0 .75-.327.75-.73V8.038c0-.403-.336-.73-.75-.73zm19.5 8.038h-15c-.414 0-.75.327-.75.73v1.462c0 .404.336.731.75.731h15c.414 0 .75-.327.75-.73v-1.462c0-.404-.336-.73-.75-.73zm0-14.615h-15c-.414 0-.75.327-.75.73v1.462c0 .404.336.73.75.73h15c.414 0 .75-.326.75-.73V1.462c0-.404-.336-.731-.75-.731zm0 7.307h-15c-.414 0-.75.328-.75.731v1.462c0 .403.336.73.75.73h15c.414 0 .75-.327.75-.73V8.769c0-.403-.336-.73-.75-.73z"></path></svg></span><span>목차</span></button></li><li aria-current="false" class="css-qvrrxd"><button type="button" aria-label="community-tab-toggle-button" class="css-1vt6fuy"><span><svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt-dots" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>CommentIcon</title><path fill="#212529" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zM128 240c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg></span><span>커뮤니티</span></button></li><li aria-current="false" class="css-qvrrxd"><button type="button" aria-label="note-tab-toggle-button" class="css-1vt6fuy"><span><svg width="24" height="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><title>NoteIcon</title><path fill="#212529" fill-rule="evenodd" d="M4.816 6.2c0-.177.07-.346.196-.471.125-.125.294-.196.471-.196h9.967c.177 0 .347.07.472.196.125.125.195.294.195.471s-.07.346-.195.471-.295.196-.472.196H5.483c-.177 0-.346-.07-.471-.196-.125-.125-.196-.294-.196-.471v0zm.667 5.2h9.967c.177 0 .347-.07.472-.195s.195-.295.195-.472c0-.176-.07-.346-.195-.471s-.295-.195-.472-.195H5.483c-.177 0-.346.07-.471.195s-.196.295-.196.471c0 .177.07.347.196.472.125.125.294.195.471.195v0zm10.186 3.237c-.07-.024-.144-.037-.218-.037H5.483c-.177 0-.347.07-.472.195s-.195.295-.195.472.07.346.195.471.295.195.472.195h9.44l.746-1.296zM5.011 19.328c-.093.094-.157.212-.182.342-.026.129-.013.263.038.385.05.122.136.226.245.3.11.072.239.112.37.112h8.16v-1.334h-8.16c-.176 0-.346.07-.471.195v0zM2.717 25h15.5c.454 0 .89-.182 1.213-.504.322-.322.503-.758.503-1.213v-3.464l-.536.928c-.193.336-.467.62-.797.824v1.712c0 .101-.041.199-.113.27-.072.073-.17.113-.27.114h-15.5c-.101 0-.199-.041-.27-.113-.073-.072-.113-.17-.114-.271V2.717c0-.101.041-.199.113-.27.072-.073.17-.113.271-.114h15.5c.1 0 .198.041.27.113.072.072.113.17.113.271v6.848l1.333-2.309V2.717c0-.455-.181-.891-.503-1.213C19.108 1.182 18.67 1 18.216 1H2.717c-.455 0-.891.182-1.213.504C1.182 1.826 1 2.262 1 2.717v20.566c0 .455.182.891.504 1.213.322.322.758.504 1.213.504v0zm12.972-3.595l2.045-1.18c.115-.067.21-.162.277-.277l6.916-11.979c.072-.125.092-.275.054-.415-.037-.14-.129-.26-.255-.333l-1.72-.992c-.062-.036-.13-.06-.202-.07-.071-.008-.143-.004-.213.015-.07.018-.135.05-.192.094-.057.044-.105.099-.14.161l-6.916 11.978c-.067.115-.101.246-.101.378v2.362c0 .052.014.103.04.149.026.045.064.082.11.109.044.026.096.04.148.04.052 0 .104-.014.149-.04v0z" clip-rule="evenodd"></path></svg></span><span>노트</span></button></li></ul></div><aside class="react-draggable css-1d73h0e" style="transform: translate(480px, 0px);"></aside><aside class="react-draggable css-1d73h0e" style="transform: translate(480px, 0px);"></aside><aside class="react-draggable css-1gytd0p" style="transform: translate(480px, 0px);"></aside><aside class="react-draggable css-1d73h0e" style="transform: translate(480px, 0px);"></aside></div>
+    
+  
+
+<div><div dir="ltr"></div></div><div><div dir="ltr"><div class="mantine-lwafmq"><div></div></div></div></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","441896424280799");fbq("track","PageView");</script>
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=441896424280799&amp;ev=PageView&amp;noscript=1">
+</noscript>
+<script type="text/javascript" id="" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/wcslog.js"></script><script type="text/javascript" id="" charset="UTF-8" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/kp.js"></script>
+<script type="text/javascript" id="">var deviceType=/Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent)?"M":"W";(function(b,d,e,a,c){b.enp=b.enp||function(){(b.enp.q=b.enp.q||[]).push(arguments)};a=d.createElement(e);a.async=!0;a.defer=!0;a.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";c=d.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script");enp("create","common","inflearn",{device:deviceType});enp("send","common","inflearn");</script>
+<script type="text/javascript" id="">(function(b,e,c,f,a,d){b[c]=b[c]||function(){(b[c].q=b[c].q||[]).push(arguments)};a=e.createElement(f);a.async=1;a.charset="utf-8";a.src="//static.dable.io/dist/plugin.min.js";d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(a,d)})(window,document,"dable","script");dable("setService","inflearn.com");dable("sendLog","visit");</script><script type="text/javascript" id="">(function(a,c,d,e){a.dmndata=[];a.jenniferFront=function(f){window.dmndata.push(f)};a.dmnaid=e;a.dmnatime=new Date;a.dmnanocookie=!1;a.dmnajennifer="JENNIFER_FRONT@INTG";a=6E4*Math.floor((new Date).getTime()/6E4);var b=c.createElement(d);b.src="https://d-collect.jennifersoft.com/"+e+"/demian.js?"+a;b.async=!0;c.getElementsByTagName(d)[0].parentNode.appendChild(b)})(window,document,"script","54170dd8");</script>
+<script type="text/javascript" id="">!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","o5gow");twq("track","PageView");</script>
+
+
+<script type="text/javascript" id="">var _AceGID=function(){var a="gtp9.acecounter.com 8080 AH4A45343888168 AW 0 NaPm,Ncisy ALL 0".split(" "),b=_AceGID?_AceGID.val:[],c=0,d=new Image(0,0);0>b.join(".").indexOf(a[3])&&(d.src="https://"+a[0]+"/?cookie",b.push(a),c=b.length);return{o:c,val:b}}(),_AceCounter=function(){var a=_AceGID,b=document.createElement("script"),c=document.getElementsByTagName("script")[0];if(0!=a.o){a=a.val[a.o-1];var d=a[0].substr(0,a[0].indexOf(".")),e="0"!=a[7]?a[2]:a[3],f=a[5].replace(/,/g,"_");b.src="https://cr.acecounter.com/Web/AceCounter_"+
+e+".js?gc\x3d"+a[2]+"\x26py\x3d"+a[4]+"\x26gd\x3d"+d+"\x26gp\x3d"+a[1]+"\x26up\x3d"+f+"\x26rd\x3d"+(new Date).getTime();c.parentNode.insertBefore(b,c);return b.src}}();</script>
+
+<script type="text/javascript" id="">var parseQueryString=function(){var b=window.location.search,a={};b.replace(RegExp("([^?\x3d\x26]+)(\x3d([^\x26]*))?","g"),function(f,c,g,d){a[c]=d});return a},dr_event_type,dr_value,dr_items=[],item,url=window.location.href,pathname=window.location.pathname,param=window.location.search,businessType="education",isItem=/^\/course\//.test(pathname)&&!/\/course.*\/lecture/.test(pathname)&&!/\/course.*\/manage/.test(pathname)&&!/\/course.*\/dashboard/.test(pathname),isItemList=/^\/courses/.test(pathname)&&
+!parseQueryString().s,isSearch=/^\/courses/.test(pathname)&&!!parseQueryString().s,isBeforeCV=/carts/.test(pathname),isCV=/payments/.test(pathname),shouldSendDynxData=isItem||isItemList||isSearch||isBeforeCV||isCV;
+if(shouldSendDynxData){if(isSearch){dr_event_type="view_search_results";item=[];for(var e=document.querySelectorAll(".card.course.course_card_item"),i=0;i<e.length;i++)dr_items.push({id:JSON.parse(e[i].getAttribute("fxd-data")).course_id,google_business_vertical:businessType})}else if(isItem){var targetId=document.querySelector('meta[property\x3d"dable:item_id"]');dr_event_type="view_item";targetId&&(dr_items=[{id:targetId.content,google_business_vertical:businessType}]);dr_value=0}else if(isItemList)for(dr_event_type=
+"view_item_list",e=document.querySelectorAll(".card.course.course_card_item"),i=0;i<e.length;i++)dr_items.push({id:JSON.parse(e[i].getAttribute("fxd-data")).course_id,google_business_vertical:businessType});else if(isBeforeCV)for(dr_event_type="add_to_cart",item=[],e=document.querySelectorAll(".button.is-small.move_to_wish"),i=0;i<e.length;i++)dr_items.push({id:JSON.parse(e[i].getAttribute("fxd-data")).course_id,google_business_vertical:businessType}),dr_value=1;else if(isCV)for(dr_event_type="purchase",
+item=[],e=document.querySelectorAll(".product_item"),i=0;i<e.length;i++)dr_items.push({id:JSON.parse(e[i].getAttribute("fxd-data")).course_id,google_business_vertical:businessType});dataLayer.push({dr_event_type:dr_event_type,dr_value:dr_value,dr_items:dr_items,event:"dynamic_remarketing"})}else dataLayer.push({event:"remarketing"});</script><div id="__endic_crx__"><div class="css-diqpy0"></div></div><script type="text/javascript" id="">if(!wcs_add)var wcs_add={};wcs_add.wa="s_5a2ed88c30a8";if(!_nasa)var _nasa={};window.wcs&&(wcs.inflow("www.inflearn.com"),wcs_do(_nasa));</script><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/box-69edcc3187336f9b0a3fbb4c73be9fe6.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><img src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/adsct" height="1" width="1" style="display: none;"><img src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/adsct(1)" height="1" width="1" style="display: none;"><iframe id="_hjSafeContext_95393323" src="./Do It! 장고+부트스트랩_ 파이썬 웹개발의 정석 _ 학습 페이지_files/saved_resource.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+<script type="text/javascript" id="">kakaoPixel&&kakaoPixel("4533976500237451452").pageView();</script><div id="the_notes"></div><div id="the_lights"><div id="the_lights_close"></div></div></body><div id="huntr-react-container-2"></div></html>
