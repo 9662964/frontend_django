@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About me</title>
-        <link href="./practice.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="./what_time_is_it.js"></script>
 
-        <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
+<head>
+    <title>About me</title>
+    <link href="./practice.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./what_time_is_it.js"></script>
 
-        <!--start of Bootstrap Navbar -->
-        <!-- class 에 container를 추가 할 경우 aligh in the middle이 적용 -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light container">
-            <a class="navbar-brand" href="./index.html">DDE World</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+    <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!--start of Bootstrap Navbar -->
+    <!-- class 에 container를 추가 할 경우 aligh in the middle이 적용 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+        <a class="navbar-brand" href="./index.html">DDE World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./blog_list.html">Blog</a>
+                    <a class="nav-link" href="./blog_list.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./about_me.html">About Me</a>
+                    <a class="nav-link" href="./about_me.html">About Me</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </li>
-              </ul>
+            </ul>
+        </div>
+    </nav>
+    <!--End of  Bootstrap Navbar -->
+
+    <!-- Clsas name 을 container로 했을 시 bootstrap에 이미 정의가 되어있다 Align in the middle-->
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <h1>About me</h1>
+                <h2>In NJ</h2>
+                <p>HTML, CSS, JS</p>
+                <hr />
+                <br />
+                <button onclick="whatTimeIsIt()">현재시각</button>
+                <br />
+                <br />
+                <hr />
+                <a href="https://google.com">Go to Google</a>
+
             </div>
-          </nav>
-          <!--End of  Bootstrap Navbar -->
+            <div class="col-3">
+                <img src="./about_me_img.jpeg" class="img-fluid">
+            </div>
+        </div>
+    </div>
 
-        <!-- Clsas name 을 container로 했을 시 bootstrap에 이미 정의가 되어있다 Align in the middle-->
-        <div class ="container">
-            <hr/>
-            <br/>
-            <button onclick="whatTimeIsIt()">현재시각</button>
-            <br/>
-            <br/>
-            <hr/>
+    <!-- Check bootstrap layout - grid   https://getbootstrap.com/docs/4.6/layout/grid/-->
+    <!-- Check bootstrap color  https://getbootstrap.com/docs/4.6/utilities/colors/-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Portfolio</h2>
+            </div>
+            <!-- 작은 화면일때는 1:1:1  화면이 커지면 2:1:1 -->
+            <div class="col-sm col-lg-6 bg-info">
+                <img src="./image/python.png" class="'ima-fluid">
+            </div>
+            <div class="col-sm col-lg-3  bg-secondary">
+                <img src="./image/sql.jpeg" class="'ima-fluid">
+            </div>
+            <div class="col-sm col-lg-3  bg-warning">
+                <img src="./image/pandas.jpeg" class="'ima-fluid">
+            </div>
+        </div>
+    </div>
 
-            <p>About me</p>
-            <a href="https://google.com">Go to Google</a>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
 
-
-            <h1>About me</h1>
-            <h2>In NJ</h2>
-
-            <p>HTML, CSS, JS</p>
-
-        <img src="./about_me_img.jpeg">
-       </div>
-
-
-
-       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> 
-    </body>
 </html>
