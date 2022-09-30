@@ -4,6 +4,7 @@
         <title>Blog</title>
         <link href="./practice.css" rel="stylesheet" type="text/css">
         <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/ff73661687.js" crossorigin="anonymous"></script>
     </head>
     <body>
     
@@ -15,7 +16,7 @@
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
             <!--  -->
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -43,12 +44,44 @@
             <!-- ml-auto  mr-auto -->
             <ul class="navbar-nav ml-auto ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Log in</a>
+                    <!-- Modal button -->
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Log in</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!--End of  Bootstrap Navbar -->
+
+    <!-- Modal id is loginModal-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="loginModal"><i class="fa-solid fa-right-to-bracket"></i>Log in</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <!-- div col-md-6를 통해 간격을 나누고 버튼에 btn-block, btn-sm을 통해 style을 추가 해 줍니다  -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fab fa-google"></i>  Log in with Google</button>
+                        <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fab fa-user"></i>  Log in with User name</button>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fab fa-envelope"></i>  Sign up with e-mail</button>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!-- Container start -->
     <!-- Added margin to y axis (3) -->
